@@ -1,0 +1,347 @@
+@font-face {
+  font-family: Mountain;
+  src: url(./fonts/MADEMountain-Regular.otf);
+
+  /* font-family: Walton;
+    src: url(./Walton.ttf);
+
+    font-family: Butler;
+    src: url(./Butler_Regular.otf); */
+}
+body {
+  margin: 0;
+  background-color: #020617;
+  overflow-x: hidden;
+  height: 100vh;
+  color: white;
+}
+body::-webkit-scrollbar {
+  width: 0.3em;
+  border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(83, 83, 83);
+}
+
+/* navbar avec search*/
+.navbar {
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 6, 23, 1) 30%,
+    rgba(2, 6, 23, 0.9)
+  );
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 5vw;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.search-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+#search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.search-wrapper div {
+  position: relative;
+  bottom: 45px;
+}
+
+#search-input {
+  border: none !important;
+  outline: none;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 120%;
+  box-sizing: border-box;
+  padding-right: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  position: relative;
+  right: 45px;
+}
+.hidden {
+  display: none;
+}
+
+.loupe {
+  width: 1.5vw;
+  position: relative;
+  right: 5px;
+  bottom: 8px;
+}
+#close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.croix {
+  width: 1vw;
+  position: relative;
+  left: 215px;
+  bottom: 25px;
+}
+
+.buttons-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0%;
+}
+
+.buttons-nav a {
+  width: 10%;
+  margin: 10px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #172554;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-nav {
+  cursor: pointer;
+  color: rgb(210, 210, 210);
+  border: none;
+  background-color: transparent;
+}
+.avatar {
+  border-radius: 100%;
+  width: 40px;
+  position: fixed;
+  top: 20px;
+}
+
+/* video en fond */
+#background-video {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+.description {
+  max-width: 40%;
+  overflow: auto;
+  font-size: 1.5vw;
+  font-family: Butler;
+}
+
+.overlay-content {
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin-top: -45%;
+}
+
+.title {
+  font-size: 2.5vw;
+  position: relative;
+  top: 10px;
+  font-family: Mountain;
+}
+.buttons {
+  display: flex;
+}
+.buttons button {
+  margin-right: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.buttons a:first-child button {
+  background-color: #172554;
+  color: rgb(210, 210, 210);
+}
+span {
+  color: #ff0000;
+}
+.buttons a {
+  text-decoration: none;
+}
+#like-icon.liked {
+  color: white !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttons button {
+    width: 80px;
+  }
+}
+
+/* boutons categories  */
+.bottom-buttons {
+  position: relative;
+  top: 10vw;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.bottom-buttons button {
+  flex: 1;
+  height: 5vw;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+
+.button1 {
+  background-image: url("./assets/boutons/marvel.webp");
+  background-size: cover;
+  background-position: center;
+}
+.button2 {
+  background-image: url("./assets/boutons/disney.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.button3 {
+  background-image: url("./assets/boutons/aventure.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.button4 {
+  background-image: url("./assets/boutons/comedie.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.button5 {
+  background-image: url("./assets/boutons/fantasie.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bottom-section {
+  color: white;
+  position: relative;
+  top: 0px;
+  left: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.bottom-section h2 {
+  font-size: 2em;
+  font-family: Mountain;
+}
+
+h2 {
+  font-family: Mountain;
+  position: relative;
+  top: 220px;
+  margin-left: 20px;
+}
+/* carousels avec plusieurs images */
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 200px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+  top: 200px;
+  font-family: Mountain;
+}
+
+.carousel img {
+  width: 200px;
+  height: 290px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.flt-left {
+  float: left;
+}
+.carousel {
+  width: 100%;
+  margin: auto;
+}
+.row {
+  width: 90%;
+  padding: 0;
+  overflow: hidden;
+  margin: auto;
+}
+.row-container {
+  width: 2000px;
+  transition: 0.5s;
+}
+.container {
+  width: 250px;
+  float: left;
+  display: inline;
+  margin: 0 5px;
+}
+.carousel button {
+  border: none;
+  color: white;
+  background: #21252b;
+  font-weight: bold;
+  outline: none;
+  border-radius: 3px;
+  height: 200px;
+  position: relative;
+  top: 160px;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.carousel button img {
+  width: 30px;
+  height: auto;
+  display: block;
+  position: relative;
+  right: 45px;
+  bottom: 40px;
+}
+.prevBTN {
+  transform: rotate(180deg);
+}
+.nextBTN {
+  margin-right: 20px;
+}

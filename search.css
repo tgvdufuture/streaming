@@ -1,0 +1,9 @@
+.affiche {
+  position: relative;
+  top: 150px;
+  margin: 50px;
+}
+.affiche img {
+  width: 300px;
+  border-radius: 20px;
+}

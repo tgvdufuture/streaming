@@ -1,0 +1,22 @@
+body{
+    color: white;
+    background-color: #020617;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.avatar-profil{
+    border-radius: 100%;
+}
+button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:nth-child(1){
+    color: red;
+    position: relative;
+    left: 130px;
+    margin: 20px;
+}
